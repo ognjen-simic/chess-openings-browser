@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: hsl(248, 25%, 12%);
+  background-repeat: no-repeat;
+}
+li{
+  padding: 0;
+  margin: 0;
+}
+header{
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, hsl(240, 64%, 19%), hsl(240, 64%, 11%));
+  height: 15vh;
+  width: 100vw;
+  text-align: center;
+}
+.bg-cont{
+  background: linear-gradient(to bottom, hsl(240, 64%, 11%), hsl(248, 25%, 12%) 400px);
+  margin-top: -1px;
+  height: 100vh;
+}
+.title{
+  color: hsl(209, 32%, 86%);
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 0;
+  padding-top: 2rem;
+  position: sticky;
+  top: 1vh;
+}
+.filters{
+  display: flex;
+  position: sticky;
+  height: 3vh;
+  top: 11vh;
+  gap: 5vw;
+  margin: 0;
+  padding: 0 0 1rem 3rem;
+}
+.filt{
+  width: 10rem;
+  max-width: 20vw;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: hsl(224, 63%, 37%);
+  outline: black;
+}
+.filt::placeholder{
+  color: black;
+}
+.filt:focus {
+  box-shadow: 1px 1px 5px black;
+}
+.Opening{
+  display: inline-block;
+  background: linear-gradient(to bottom, hsl(224, 77%, 20%), hsl(224, 77%, 13%));
+  padding: 2rem 1.5rem;
+  margin: 1rem 0.5rem 1rem 0;
+  border-radius: 15px;
+  max-width: 90vw;
+  box-shadow: 5px 10px 15px black;
+}
+.opImg{
+  width: 25rem;
+  max-width: 80vw;
+  margin-bottom: 1rem;
+}
+.opInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.opInfo p{
+  margin: 0;
+  color: white;
+  font-size: 1.1rem;
+}
+.opName{
+  background-color: hsl(224, 63%, 37%);
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+.opList{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.noRes{
+  text-align: center;
+  font-size: 2.5rem;
+  color: hsl(209, 32%, 86%);
+}
+@media (max-width: 700px) {
+  .title{
+    font-size: 3rem;
+  }
+  .filters{
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .title{
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .title{
+    font-size: 2.3rem;
+  }
+}
