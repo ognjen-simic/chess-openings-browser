@@ -31,9 +31,8 @@ function OpeningList({search, typeFilter, firstMove}){
                     <h2 className="opName">{o.name}</h2>
                     <img className="opImg" src={o.picture} alt={o.name}/>
                     <div className="opInfo">
-                        <p>First Move: {o.firstMove}</p>
-                        <p>Type: {o.type}</p>
                         <p>Moves: {o.moves.join(", ")}</p>
+                        <p>Type: {o.type}</p>
                         <p>Eco: {o.eco}</p>
                     </div>
                 </li>
